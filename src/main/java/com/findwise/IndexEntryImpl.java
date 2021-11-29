@@ -1,6 +1,6 @@
 package com.findwise;
 
-class IndexEntryImpl implements IndexEntry, Comparable<IndexEntry> {
+class IndexEntryImpl implements IndexEntry {
 
     private String id;
     private double score;
@@ -23,11 +23,6 @@ class IndexEntryImpl implements IndexEntry, Comparable<IndexEntry> {
     @Override
     public void setScore(double score) {
         this.score = score;
-    }
-
-    @Override
-    public int compareTo(IndexEntry o) {
-        return Double.compare(o.getScore(), this.getScore());
     }
 }
 
