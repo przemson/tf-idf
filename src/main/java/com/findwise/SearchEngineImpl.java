@@ -7,7 +7,7 @@ public class SearchEngineImpl implements SearchEngine {
     private final Map<String, String> docCorpus;
     private final List<IndexEntry> docEntries;
     private Comparator<IndexEntry> comparator;
-    private static final String PUNCTUATIONS = ".,;:";
+    private static final String PUNCTUATIONS = "[.,;:]";
 
     public SearchEngineImpl() {
         this.docCorpus = new HashMap<>();
